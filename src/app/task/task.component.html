@@ -1,0 +1,19 @@
+<button (click) = "getTasks()">
+    Click to load the tasks
+</button>
+<div *ngFor = "let task of allTasks">
+    <div >
+        {{task.title}}
+    </div>
+    <div>
+        Description: {{task.description}}
+    </div>
+    <div>
+        Status: {{task.completed}}
+    </div>
+    <button class="showInfo">
+        Show Info
+    </button>
+</div>
+
+
